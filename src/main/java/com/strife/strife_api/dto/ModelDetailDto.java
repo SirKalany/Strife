@@ -7,7 +7,7 @@ import java.util.Map;
 
 @Getter
 @AllArgsConstructor
-public class ModelDto {
+public class ModelDetailDto {
     private String slug;
     private String name;
     private Integer yearIntroduced;

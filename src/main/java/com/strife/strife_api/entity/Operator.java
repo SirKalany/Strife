@@ -6,7 +6,7 @@ import lombok.Setter;
 import java.util.UUID;
 
 @Entity
-@Table(name = "model_operator")
+@Table(name = "operator")
 @Getter @Setter
 public class Operator {
 

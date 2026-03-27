@@ -1,0 +1,1 @@
+ALTER TABLE model_operator RENAME TO operator;
