@@ -1,13 +1,14 @@
 package com.strife.strife_api.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.Setter;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 @Getter
-@AllArgsConstructor
-public class ModelDetailDto {
+@Setter
+public class ModelRequest {
     private String slug;
     private String name;
     private Integer yearIntroduced;
@@ -15,6 +16,6 @@ public class ModelDetailDto {
     private String imageUrl;
     private String article;
     private Map<String, Object> specs;
-    private FamilyDto family;
-    private List<OperatorDto> operators;
+    private UUID familyId;
+    private List<OperatorRequest> operators;
 }

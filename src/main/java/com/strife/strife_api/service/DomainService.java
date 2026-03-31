@@ -15,7 +15,7 @@ public class DomainService {
     public List<DomainDto> getAllDomains() {
         return domainRepository.findAll()
                 .stream()
-                .map(d -> new DomainDto(d.getSlug(), d.getName()))
+                .map(d -> new DomainDto(d.getId(), d.getSlug(), d.getName()))
                 .toList();
     }
 }

@@ -15,7 +15,7 @@ public class CountryService {
     public List<CountryDto> getCountriesByDomain(String domainSlug) {
         return countryRepository.findCountriesByDomainSlug(domainSlug)
                 .stream()
-                .map(c -> new CountryDto(c.getSlug(), c.getName(), c.getFlagUrl()))
+                .map(c -> new CountryDto(c.getId(), c.getSlug(), c.getName(), c.getFlagUrl()))
                 .toList();
     }
 }

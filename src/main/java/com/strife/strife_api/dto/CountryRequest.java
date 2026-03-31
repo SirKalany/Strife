@@ -1,13 +1,11 @@
 package com.strife.strife_api.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import java.util.UUID;
+import lombok.Setter;
 
 @Getter
-@AllArgsConstructor
-public class CountryDto {
-    private UUID id;
+@Setter
+public class CountryRequest {
     private String slug;
     private String name;
     private String flagUrl;
