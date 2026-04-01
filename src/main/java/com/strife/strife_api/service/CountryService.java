@@ -18,4 +18,11 @@ public class CountryService {
                 .map(c -> new CountryDto(c.getId(), c.getSlug(), c.getName(), c.getFlagUrl()))
                 .toList();
     }
+
+    public List<CountryDto> getAllCountries() {
+        return countryRepository.findAll()
+                .stream()
+                .map(c -> new CountryDto(c.getId(), c.getSlug(), c.getName(), c.getFlagUrl()))
+                .toList();
+    }
 }

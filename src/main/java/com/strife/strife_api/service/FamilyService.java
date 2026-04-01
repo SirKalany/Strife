@@ -15,7 +15,7 @@ public class FamilyService {
     public List<FamilyDto> getFamiliesByDomainAndCountry(String domainSlug, String countrySlug) {
         return familyRepository.findByDomainSlugAndCountrySlugOrderByName(domainSlug, countrySlug)
                 .stream()
-                .map(f -> new FamilyDto(f.getSlug(), f.getName(), f.getImageUrl(), f.getDescription()))
+                .map(f -> new FamilyDto(f.getId(), f.getSlug(), f.getName(), f.getImageUrl(), f.getDescription()))
                 .toList();
     }
 }

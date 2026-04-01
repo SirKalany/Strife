@@ -53,6 +53,7 @@ public class ModelService {
                                 model.getArticle(),
                                 model.getSpecs(),
                                 new FamilyDto(
+                                                model.getFamily().getId(),
                                                 model.getFamily().getSlug(),
                                                 model.getFamily().getName(),
                                                 model.getFamily().getImageUrl(),
