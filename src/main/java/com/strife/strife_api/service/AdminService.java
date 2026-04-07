@@ -123,6 +123,8 @@ public class AdminService {
         }
 
         operatorRepository.deleteByModel(model);
+        operatorRepository.flush();
+
         saveOperators(model, req.getOperators());
 
         return modelRepository.save(model);
